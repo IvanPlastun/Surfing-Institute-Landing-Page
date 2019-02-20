@@ -3,6 +3,7 @@
 ## Запуск сборки проекта
 
 1. Клонирование проекта к себе на ПК               
+```sh
 https://github.com/IvanPlastun/Surfing-Institute-Landing-Page
 ```
 
@@ -21,8 +22,7 @@ npm install
 gulp
 ```
 ## Ссылка на demo
-[2]: https://ivanplastun.github.io/Surfing-Institute-Landing-Page/app/index.html  "surfing demo"
-
+[surfing page demo ](https://ivanplastun.github.io/Surfing-Institute-Landing-Page/app/index.html "demo")
 ### technologes
 
 Технологии:
