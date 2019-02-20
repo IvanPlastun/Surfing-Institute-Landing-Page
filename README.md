@@ -2,6 +2,9 @@
 
 ## Запуск сборки проекта
 
+Адаптивный макет landing page. Для написание стилей использовался препроцессор LESS, поскольну он помогает ускорить процесс написание стилей и разбивать стили на модули. Для ускорения процесса верстки использовалась Сборка Gulp.
+
+
 1. Клонирование проекта к себе на ПК               
 ```sh
 https://github.com/IvanPlastun/Surfing-Institute-Landing-Page
@@ -23,10 +26,11 @@ gulp
 ```
 ## Ссылка на demo
 [surfing page demo ](https://ivanplastun.github.io/Surfing-Institute-Landing-Page/app/index.html "demo")
-### technologes
+
+
+### Technologes
 
 Технологии:
-
-* [HTML5,CSS3]
-* [LESS]
-* [Gulp]
+* HTML5,CSS3
+* LESS
+* Gulp
