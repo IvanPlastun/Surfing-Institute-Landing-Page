@@ -1,0 +1,86 @@
+.reviews {
+    width: 100%;
+    //width: 260px;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews__title {
+    .header-title-2;
+    text-align: center;
+    width: 100%;
+}
+
+.review-item {
+    width: 260px;
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 15px;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: -18px;
+        content: "";
+        display: block;
+        width: 36px;
+        height: 29px;
+        background-image: url(../img/icons/commas.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+    }
+}
+
+.review-item__text {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.review-item__author {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+
+    &::before {
+        content: "- ";
+    }
+}
+
+@media (min-width: 630px) {
+    .reviews {
+        flex-direction: row;
+    }
+
+    .review-item {
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+}
+
+@media (min-width: 1260px) {
+    .reviews {
+        width: 260px;
+        order: 0;
+        margin-right: 20px;
+    }
+
+    .reviews__title {
+        text-align: left;
+    }
+
+    .review-item { margin-right: 0;}
+}

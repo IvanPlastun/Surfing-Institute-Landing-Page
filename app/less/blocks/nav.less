@@ -1,0 +1,59 @@
+.nav-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 80px;
+}
+
+.nav {
+    display: none;
+}
+
+.nav__item {
+    color: #aaa;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-right: 70px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    &:last-child {
+        margin-right: 0;
+    }
+    &--active,
+    &:hover, &:focus, &:active {
+        color: #111;
+        font-weight: 600;
+    }
+}
+
+// Для ширины экрана от 768px и более
+@media (min-width: 620px) {
+    
+    .nav-wrapper {
+        padding-top: 50px;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    .nav {
+        display: block;
+    }
+    
+}
+
+@media (min-width: 1460px) {
+    .nav-wrapper { 
+        width: 1440px;
+        padding-top: 92px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 220px;
+    }
+}

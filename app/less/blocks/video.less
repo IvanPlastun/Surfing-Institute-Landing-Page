@@ -1,0 +1,104 @@
+.video {
+    width: 100%;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video__title {
+    .header-title-2;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.video-item {
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+}
+
+.play-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    position: relative;
+    background-color: #fff;
+    &::before { 
+        position: absolute;
+        margin-left: -4px;
+        margin-top: -5.5px;
+        left: 50%;
+        top: 50%;
+        content: "";
+        display: block;
+        border-top: 5.5px solid transparent;
+        border-left: 8px solid #000;
+        border-bottom: 5.5px solid transparent;
+    }
+
+}
+
+.video-item .play-icon {
+    position: absolute;
+    left: -10px;
+    bottom: -15px;
+}
+
+.video-center {
+    position: relative;
+    order: -1;
+    margin-bottom: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.video-center .play-icon{
+    position: absolute;
+    left: 24px;
+    bottom: 32px;
+}
+
+// Для ширины экрана от 768px и более
+@media (min-width: 630px) {
+    .video {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .video-item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+}
+
+
+@media (min-width: 1260px) {
+    .video {
+        width: 280px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .video-center {
+        order: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .video__title {
+        text-align: left;
+    }
+
+    .video-item {
+        margin-right: 0px;
+    }
+}
